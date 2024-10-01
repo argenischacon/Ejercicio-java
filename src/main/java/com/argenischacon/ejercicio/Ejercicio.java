@@ -1,29 +1,28 @@
 package com.argenischacon.ejercicio;
 
-/*Desarrolla un sistema de gestión de vehículos. El sistema debe permitir manejar diferentes 
-tipos de vehículos (como coches y motos), con atributos básicos compartidos y métodos para 
-mostrar la información específica de cada tipo. Debes usar clases abstractas y genéricos para 
-implementar esta funcionalidad.
- */
+import java.util.ArrayList;
 import java.util.Date;
 
+/*
+Imagina que tienes un sistema de reparto de pedidos en el cual los vehículos 
+(bicicleta, motocicleta, automóvil) entregan diferentes tipos de pedidos, 
+y cada vehículo tiene diferentes comportamientos en función del tipo de terreno 
+donde realiza la entrega.
+ */
 public class Ejercicio {
 
     public static void main(String[] args) {
 
-        Garaje<Coche> garajeCoches = new Garaje<>();
-        garajeCoches.agregarVehiculo(new Coche("Toyota", "Corolla", 2020, "Gasolina"));
-        garajeCoches.agregarVehiculo(new Coche("Tesla", "Model 3", 2022, "Eléctrico"));
-
-        Garaje<Moto> garajeMotos = new Garaje<>();
-        garajeMotos.agregarVehiculo(new Moto("Yamaha", "MT-07", 2021, 689));
-        garajeMotos.agregarVehiculo(new Moto("Honda", "CB500F", 2019, 471));
-
-        System.out.println("Garaje de Coches:");
-        garajeCoches.mostrarVehiculos();
-
-        System.out.println("\nGaraje de Motos:");
-        garajeMotos.mostrarVehiculos();
+        ArrayList<Vehiculo> vehiculos = new ArrayList<>();
+        vehiculos.add(new Bicicleta("Rx", "500", new Date(2024 - 1900, 10, 1), true));
+        vehiculos.add(new Motocicleta("Bera", "500", new Date(2024-1900, 10, 1)));
+        vehiculos.add(new Automovil("Hyundai", "300x", new Date(2024-1900, 10, 1)));
+        
+        for(Vehiculo vehi: vehiculos){
+            vehi.entregarPedido(Terreno.CAMPO);
+        }
+    
+        
 
     }
 }
