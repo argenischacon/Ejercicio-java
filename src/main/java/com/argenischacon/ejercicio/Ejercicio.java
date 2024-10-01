@@ -1,23 +1,29 @@
 package com.argenischacon.ejercicio;
 
+/*Desarrolla un sistema de gestión de vehículos. El sistema debe permitir manejar diferentes 
+tipos de vehículos (como coches y motos), con atributos básicos compartidos y métodos para 
+mostrar la información específica de cada tipo. Debes usar clases abstractas y genéricos para 
+implementar esta funcionalidad.
+ */
 import java.util.Date;
 
 public class Ejercicio {
 
     public static void main(String[] args) {
 
-        Inventario electronicos = new Inventario();
-        electronicos.agregarProducto(new Electronico(299.99, "E123", 10, "Procesador Intel i5, 16GB RAM"));
-        electronicos.agregarProducto(new Electronico(199.99, "E124", 5, "Procesador AMD Ryzen 5, 8GB RAM"));
+        Garaje<Coche> garajeCoches = new Garaje<>();
+        garajeCoches.agregarVehiculo(new Coche("Toyota", "Corolla", 2020, "Gasolina"));
+        garajeCoches.agregarVehiculo(new Coche("Tesla", "Model 3", 2022, "Eléctrico"));
 
-        Inventario alimentos = new Inventario();
-        alimentos.agregarProducto(new Alimento(2.99, "A321", 50, new Date(2024 - 1900, 12, 01)));
-        alimentos.agregarProducto(new Alimento(1.99, "A322", 30, new Date(2024 - 1900, 10, 15)));
+        Garaje<Moto> garajeMotos = new Garaje<>();
+        garajeMotos.agregarVehiculo(new Moto("Yamaha", "MT-07", 2021, 689));
+        garajeMotos.agregarVehiculo(new Moto("Honda", "CB500F", 2019, 471));
 
-        System.out.println("Inventario de electronicos: ");
-        electronicos.mostrarInventario();
-        System.out.println("\nInventario de Alimentos: ");
-        alimentos.mostrarInventario();
+        System.out.println("Garaje de Coches:");
+        garajeCoches.mostrarVehiculos();
+
+        System.out.println("\nGaraje de Motos:");
+        garajeMotos.mostrarVehiculos();
 
     }
 }
