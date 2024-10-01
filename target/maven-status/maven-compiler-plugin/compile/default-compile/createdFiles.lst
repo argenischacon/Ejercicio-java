@@ -1,6 +1,5 @@
-com\argenischacon\ejercicio\Cadena.class
 com\argenischacon\ejercicio\Ejercicio.class
-com\argenischacon\ejercicio\Classifier.class
-com\argenischacon\ejercicio\Ejercicio$1.class
-com\argenischacon\ejercicio\Classifiable.class
-com\argenischacon\ejercicio\Pair.class
+com\argenischacon\ejercicio\Electronico.class
+com\argenischacon\ejercicio\Inventario.class
+com\argenischacon\ejercicio\Alimento.class
+com\argenischacon\ejercicio\Producto.class
