@@ -1,4 +1,6 @@
-com\argenischacon\ejercicio\Libro.class
-com\argenischacon\ejercicio\Biblioteca.class
+com\argenischacon\ejercicio\ICompra.class
+com\argenischacon\ejercicio\StockInsuficienteException.class
+com\argenischacon\ejercicio\Cliente.class
+com\argenischacon\ejercicio\Tienda.class
 com\argenischacon\ejercicio\Ejercicio.class
-com\argenischacon\ejercicio\Usuario.class
+com\argenischacon\ejercicio\Producto.class
