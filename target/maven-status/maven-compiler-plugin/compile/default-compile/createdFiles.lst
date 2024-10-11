@@ -1,6 +1,5 @@
-com\argenischacon\ejercicio\ICompra.class
-com\argenischacon\ejercicio\StockInsuficienteException.class
-com\argenischacon\ejercicio\Cliente.class
-com\argenischacon\ejercicio\Tienda.class
+com\argenischacon\ejercicio\Ropa.class
 com\argenischacon\ejercicio\Ejercicio.class
+com\argenischacon\ejercicio\Articulo.class
 com\argenischacon\ejercicio\Producto.class
+com\argenischacon\ejercicio\Electronico.class
